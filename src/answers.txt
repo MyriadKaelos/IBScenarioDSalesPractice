@@ -1,0 +1,80 @@
+
+
+(13)
+    (a)
+        A class, in this case would be a SalesPerson, or a Sale class that could be used to
+        create SalesPersons or Sales, basically a framework where one would put necessary
+        information and then the class would create an instance, (or an instantiation)
+        of the class for you.
+    (b)
+        There could be an employee parent class, which has properties relating to salaries,
+        hours, and offices. There would then be a seperate child salesperson class, and
+        another manager class, and an office staff class.
+    (c)
+        Libraries are where large amounts of information are stored, this can be
+        information, subroutines, messages, documentation, etc. For the case of this
+        administrative group, a library may be helpful for storage of information relating
+        to sales, salespersons, payments, salaries, expenses, etc... in a way that does
+        not clutter up the code on the surface.
+
+(14)
+    (b)
+        An accessor method may be useful to get data from the SalesPerson class because
+        many of the attributes and variables within the SalesPerson class are private,
+        and could not be accessed otherwise.
+    (c)
+        (i)
+
+                                    Calculates Largest
+                                       from Array
+                +-----------+        +------------+
+                |SalesPerson|--------|Largest Sale|
+                +-----------+        +------------+
+                      |                 Adds a sale
+                      |               to salesHistory
+                      |                +----------+
+                +------------+         | Set Sales|
+                |SalesHistory|---------|  History |\
+                +------------+\        +----------+ \
+                               \                     \
+                                \                     \
+                                 \                      \
+                                  \                       \
+                              +--------+                    +-----+
+                              |Array of|--------------------|Sales|
+                              | Sales  |                    +-----+
+                              +--------+
+        (ii)
+            Like with any change that is not thought through properly, there may be
+            unforeseen consequences. Any change to the sales class could impact the
+            functionality of any other functions that utilize the class function, namely
+            the SalesPerson Class.
+    (d)
+        "102"
+        2
+        2550.40
+        1300.00
+    (h)
+        To make a function that finds the pay based on sales per month, one must first
+        create a dateOfSale value for the Sales class. Otherwise there is no way to
+        calculate the sales made each month based on time. From this point, the
+        SalesPerson class must have a change that allows the Payroll class to get Sales
+        values based on time, maybe one that filters out sales past a certain date, then
+        returns the values of the sales.
+(15)
+    (a)
+        import java library.linkedList
+(16)
+    (a)
+        Reference data types can be anything that refernces a data object. For example,
+        referencing "Node" as a data type is a refernce data type, also, not a primitive
+        data type, such as "int", or "String".
+    (b)
+          33,
+        12, 50
+          14
+        The program would be given the first node, 33. The program would then
+        print(Node 12), in other words, the left one. The program would recursively
+        activate the right node of the "12 node" and then find the 14. After finding the
+        end of the tree it would print, "14" then "12", then "50", because we have gone
+        to the right now off of 33, then it would finally print "33".
